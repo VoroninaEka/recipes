@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+     h1 {
+     color:#9370DB;
+     text-align:center;
+     }
+     body {
+     font-family: Candara Light;
+     font-color:#9370DB;
+     }
+     label
+     {
+     color:#9370DB;
+     font-size: 25px;
+     margin-top: 30px
+     }
+     </style>
+    </head>
+<body>
+<form action="action_page.php" method="get">
+  <h1 style="margin-top:30%">Хотите что-то конкретное? Напишите название рецепта или блюда!</h1>
+  <INPUT NAME="rec" TYPE=text size="26" style="font-size: 19pt; font-family: Candara Light; margin-top:20px; color:#9370DB;
+  border-color:#9370DB; background-color: #FFDAB9; border: 3px; text-align:center" required placeholder="Плов с курицей" name="rec">
+  <input type="checkbox" id="dont_know" name="dont">
+  <b><label for="dont_know"> Не  хочу  ничего  конкретного</label></b><br>
+  <input type="submit" value="Дальше" style="margin-top: 45px; background-color:#9370DB; border:0; color:#FFDAB9;
+   font-size: 25px; text-align: center; width:100%">
+</form>
+</body>
+</html>

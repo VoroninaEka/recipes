@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS recipes;
+
+CREATE TABLE recipes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title2 TEXT NOT NULL,
+    recipe TEXT NOT NULL,
+    lemma TEXT NOT NULL
+
+);

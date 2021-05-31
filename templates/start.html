@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рецептики</title>
+    <style>
+     body {
+     background-color:#FFDAB9;
+     font-family: Candara Light;
+
+  text-align:center
+     }
+     .action-btn {
+     position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  margin-top: 160px;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+  color: #9370DB;
+  background: #FFDAB9;
+  border: 2px solid #9370DB;
+  transition: .4s linear;
+  width: 29%;
+  text-align:center
+}
+.action-btn:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 1px solid #9370DB;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+}
+.action-btn:hover {
+  background: #9370DB;
+  color: #FFDAB9;
+}
+     </style>
+</head>
+<body>
+<div>
+<a href="all_of_rec" class="action-btn" style="margin-left:16px">база рецептов</a>
+<a href="main" class="action-btn">выбери рецепт для себя</a>
+<a href="add" class="action-btn">добавить свой рецепт</a>
+</div>
+<marquee behavior="alternate" direction="left" loop="100" scrollamount="7" style="color:#9370DB; font-size:1500%; text-align:center;">
+    <b>ДЕСЕРТЫ&nbsp;&nbsp;СУПЫ&nbsp;&nbsp;ЗАКУСКИ&nbsp;&nbsp;ГОРЯЧЕЕ&nbsp;&nbsp;НАПИТКИ&nbsp;&nbsp;ГАРНИРЫ</b></marquee>
+<p style="color:#9370DB; font-size:32px; text-align:center; margin-top:0">рецепты на твой вкус</p>
+</body>
+</html>

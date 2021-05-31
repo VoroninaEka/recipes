@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Все рецепты</title>
+    <style>
+        body {
+    background-color:#FFDAB9;
+    font-family: Candara Light;
+    }
+    </style>
+</head>
+<body>
+<div>
+    {% for recipe in recipes %}
+        <a href="{{ url_for('recipe', recipe_id=recipe['id']) }}"><h2 style="text-transform: uppercase;">{{ recipe['title2'] }}</h2></a>
+        <p> "{{ recipe['recipe'] }}"</p>
+    {% endfor %}
+    </div>
+</body>
+</html>

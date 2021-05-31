@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор</title>
+    <style>
+     h1 {
+     color:#9370DB;
+     text-align:center;
+     }
+     body {
+     font-family: Candara Light;
+     font-color:#9370DB;
+     }
+     p {
+     text-align:center;
+     font-size: 25px;
+     margin-bottom:0;
+     color:#9370DB;
+     }
+     label {
+     color:#9370DB;
+     font-size: 25px;
+     margin-top: 30px
+     }
+     .size_block {
+     column-count: 2;
+     }
+     </style>
+</head>
+<body>
+<form action="action_page.php" method="get">
+  <h1 style="margin-top:33%">Выберите способ приготовления:</h1>
+  <div class="size_block">
+      <input type="checkbox" id="запечь" name="method[]">
+      <label for="запечь">Запечь</label><br>
+      <input type="checkbox" id="сварить" name="method[]">
+      <label for="сварить">Сварить</label><br>
+      <input type="checkbox" id="пожарить" name="method[]">
+      <label for="пожарить">Пожарить</label><br>
+      <input type="checkbox" id="потушить" name="method[]">
+      <label for="потушить">Потушить</label><br>
+  </div>
+  <br><br>
+  <input type="checkbox" id="без разницы">
+    <b><label for="без разницы">Мне без разницы</label></b><br>
+  <input type="submit" value="Дальше" style="margin-top: 15px; background-color:#9370DB; border:0; color:#FFDAB9;
+   font-size: 25px; text-align: center; width:100%">
+</form>
+</body>
+</html>

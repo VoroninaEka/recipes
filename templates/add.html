@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить рецепт</title>
+    <style>
+    body {
+    background-color:#FFDAB9;
+    font-family: Candara Light;
+    text-align:center
+    }
+    button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    margin-top: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: #9370DB;
+    background: #FFDAB9;
+    border: 2px solid #9370DB;
+    transition: .4s linear;
+    width: 35%;
+    text-align:center
+    }
+    button:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 1px solid #9370DB;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    }
+    button:hover {
+    background: #9370DB;
+    color: #FFDAB9;
+    }
+    label {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #9370DB;
+    }
+    input[type="text"],textarea {
+    border-width: 0;
+    outline: none;
+    margin: 0;
+    width: 90%;
+    padding: 10px 15px;
+    background: #F8E0F1;
+    }
+    input[type="text"]:focus, textarea:focus {
+    box-shadow: inset 0 0 0 2px #9370DB;
+    }
+    fieldset {
+    border-color: #9370DB;
+    padding: 10px;
+    }
+    form {
+    padding: 30px;
+    }
+
+    </style>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <label>Название рецепта</label><input type="text" name="title2" required placeholder="Плов с курицей" value="{{ request.form['title2'] }}"></input>
+            <label>Рецепт</label>
+            <textarea rows="12" name="recipe">{{ request.form['recipe'] }}</textarea>
+        </fieldset>
+            <button type="submit">Добавить</button>
+    </form>
+
+</body>
+</html>

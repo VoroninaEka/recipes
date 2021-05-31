@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Выбор</title>
+     <style>
+     frame {
+     background-color:#FFDAB9
+     }
+     </style>
+ </head>
+
+<form method="post">
+ <frameset cols="25%, 25%, 25%, *" border="3" bordercolor="#9370DB">
+   <frame src="what_do_you_want" name="want" SCROLLING=NO>
+   <frame src="ingredients" name="ingredients">
+   <frame src="ingredients_you_do_not_want" name="do_not_want">
+   <frame src="cooking_method" name="method">
+ </frameset>
+  <input type="checkbox" id="dont_know" name="dont">
+  <b><label for="dont_know"> Не  хочу  ничего  конкретного</label></b><br>
+  <input type="submit" value="Дальше" style="margin-top: 45px; background-color:#9370DB; border:0; color:#FFDAB9;
+   font-size: 25px; text-align: center; width:100%">
+</form>
+</html>
